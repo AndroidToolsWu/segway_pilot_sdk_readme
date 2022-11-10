@@ -1,11 +1,11 @@
 
 # Segway Pilot SDK (Alpha版预览)
-![图片](readme_image/AIBox%20hardware.png)
-![图片](readme_image/AIBox%20hardware2.png)
+![图片](readme_image/AIBox_hardware.png)
+![图片](readme_image/AIBox_hardware2.png)
 一套支持在Segway Pilot上开发、部署AI模型的SDK。
 
 # 一、SDK Flow Path
-![图片](readme_image/SDK%20Flow%20Path.png)
+![图片](readme_image/SDK_Flow_Path.png)
 
 # 二、Segway Pilot实体开发套件（只限客户）
 ## 1. 实体开发套件内容

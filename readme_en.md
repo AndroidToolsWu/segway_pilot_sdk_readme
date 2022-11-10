@@ -1,15 +1,15 @@
 
 # Segway Pilot SDK (Preview for Alpha Version)
-![图片](./AIBox%20hardware.png)
-![图片](./AIBox%20hardware2.png)
+![图片](./readme_image/AIBox_hardware.png)
+![图片](./readme_image/AIBox_hardware2.png)
 A set of SDKs that support development and deployment of AI models on Segway Pilot.  
 
 # I. SDK Flow Path
-![图片](./SDK%20Flow%20Path.png)
+![图片](./readme_image/SDK_Flow_Path.png)
 
 # II. Development Kit Devices (only available for Lyft)
 ## 1. Contents of Development Kit
-![图片](./aibox_package.png)
+![图片](./readme_image/aibox_package.png)
 
 |SN|Content|Qty|Use|
 |:-----:|:-------|:------:|:------|
@@ -18,7 +18,7 @@ A set of SDKs that support development and deployment of AI models on Segway Pil
 |3|Type-c USB cable|1|Connecting PC and device for debugging|
 |4|32G USB drive|1|Built-in dataset, building software, partial document description|
 ## 2. USB drive contents
-![图片](./u_disk.jpg)  
+![图片](./readme_image/u_disk.jpg)  
 |SN|Content|Use|
 |:-----:|:-------|:------|
 |1|android debug|Segway Pilot debugging tool|
@@ -186,7 +186,7 @@ Variable Value: %JAVA_HOME%\bin;%JAVA_HOME%\jre\bin
 ```
 (3) Click "Apply" and "OK" to enable configuration.   
 (4) Open Terminal and enter `java -version` to confirm whether the jdk is successfully configured. The following figure shows that the configuration is successful.
-![图片](./javav.jpg)
+![图片](./readme_image/javav.jpg)
 
 ### **b. Download Android Studio (4.0.2)**
 **Method I:**  
@@ -200,7 +200,7 @@ Click “Install” and “Next Step” until the installation is completed.
 > Click Tools -> SDK Manager -> SDK Tools  
 > Click "Show Package Details" in the lower right corner, select the NDK item (version is 16.1.447), select the CMake item (version is 3.6.4), then click "Apply" to start the installation.
 
-![图片](./install_ndk_cmake.jpg) 
+![图片](./readme_image/install_ndk_cmake.jpg) 
 ## 2. Import and use sample app project
 ### **a. Import AIBoxSampleProject**
 i. clone project
@@ -208,7 +208,7 @@ i. clone project
 git clone https://github.com/SegwayRoboticsSamples/AIBoxSample.git
 ```
 ii. Use Android Studio to open the sample project   
-![图片](./import_project.jpg)
+![图片](./readme_image/import_project.jpg)
 
 ### **b. Compile the project**
 If fail to compile the project and prompt `NDK not configured`.   
@@ -217,7 +217,7 @@ ii. Find the NDK path from the installation directory, and add NDK path into the
 ```
 ndk.dir=D\:\\android\\Sdk\\ndk\\16.1.447499  (Change D:... to your installation path)
 ```
-![图片](./ndk.jpg)  
+![图片](./readme_image/ndk.jpg)  
 
 ## 3. Run AIBoxSample on Segway Pilot 
 Rename the trained AI model file to `apple_model.tflite`. Run the command below.
@@ -228,7 +228,7 @@ Find a apple image from test dataset and copy it into current path. Rename the c
 ```
 adb push apple.jpeg sdcard
 ```
-![图片](./sdk_sample_1.jpg)  
+![图片](./readme_image/sdk_sample_1.jpg)  
 ### **a. Use adb and scrcpy to debug Segway Pilot**  
 The tools `adb` and `scrcpy` can be found in the folder of the USB drive  titled `android debug`, copy it to your PC and unzip it.
 > Tips：  
@@ -238,10 +238,10 @@ The tools `adb` and `scrcpy` can be found in the folder of the USB drive  titled
 > Make sure you have already copied the `apple.jpeg` image from your PC into `sdcard/`  of Segway Pilot.  
 
 Click the button `OPEN LOCAL IMAGE` and `START` next，the apple detected will be shown with a green rect. 
-![图片](./sdk_sample_2.jpg)
+![图片](./readme_image/sdk_sample_2.jpg)
 ### **c. Real-time apple detection**
 Click the button `OPEN THE CAMERA` and `START` next to start real-time apple detection, and the apple detected will be covered with a real-time green rect.
-![图片](./sdk_sample_3.jpg)
+![图片](./readme_image/sdk_sample_3.jpg)
 # V. FAQ
 
 1. If the message `...path filename too long` is shown during `git clone`, run the following command in Terminal to solve this problem. 
